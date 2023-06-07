@@ -1,0 +1,35 @@
+{
+    "name": "js-sea-test",
+    "version": "0.0.0",
+    "private": true,
+    "homepage": "https://github.com/electrovir/node-js-sea-test",
+    "bugs": {
+        "url": "https://github.com/electrovir/node-js-sea-test/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/electrovir/node-js-sea-test"
+    },
+    "license": "(MIT or CC0 1.0)",
+    "author": {
+        "name": "electrovir",
+        "url": "https://github.com/electrovir"
+    },
+    "scripts": {
+        "build": "npm run compile && cp $(command -v node) dist/index && postject dist/index NODE_JS_CODE dist/index.js --sentinel-fuse NODE_JS_FUSE_fce680ab2cc467b6e072b8b5df1996b2 --macho-segment-name NODE_JS && codesign --sign - dist/index",
+        "compile": "rm -rf dist && virmator compile"
+    },
+    "devDependencies": {
+        "postject": "^1.0.0-alpha.6",
+        "prettier": "^2.8.8",
+        "prettier-plugin-interpolated-html-tags": "^0.0.4",
+        "prettier-plugin-jsdoc": "^0.4.2",
+        "prettier-plugin-multiline-arrays": "^1.1.4",
+        "prettier-plugin-organize-imports": "^3.2.2",
+        "prettier-plugin-packagejson": "^2.4.3",
+        "prettier-plugin-sort-json": "^1.0.0",
+        "prettier-plugin-toml": "^0.3.1",
+        "typescript": "^5.0.4",
+        "virmator": "^6.6.2"
+    }
+}
